@@ -2,6 +2,10 @@
 
 > An Simple Vue Project that uses Nitro UI Vue.
 
+This is a tryout Vue project that uses [@nitro-ui/vue-framework](https://github.com/icarasia-engineering/nitro-ui-vue). Or, it can a be a good skeleton Vue project with Webpack + [@nitro-ui/vue-framework](https://github.com/icarasia-engineering/nitro-ui-vue).
+
+Checkout [Nitro UI](https://github.com/icarasia-engineering/nitro-ui) in Github.
+
 ## Getting Started
 
 Soon.
@@ -57,6 +61,10 @@ Types of changes:
 - `Removed` for now removed features.
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
+
+## [1.0.0] - 2019-10-18
+### Added
+- Vuex
 
 ## [0.0.0] - 2019-10-18
 

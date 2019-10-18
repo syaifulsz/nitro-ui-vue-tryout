@@ -1,16 +1,23 @@
 <template>
     <div>
-        <div class="display-4">
-            Home
+        <div class="display-4 py-3">
+            Tryout
         </div>
-        <div class="text-muted">
-            Some awesome description about <strong>@nitro-ui-vue</strong>.
-        </div>
+        <p class="text-muted">
+            This is a tryout Vue project that uses <strong>@nitro-ui/vue-framework</strong>.<br />
+            Or, it can a be a good skeleton Vue project with Webpack + <strong>@nitro-ui/vue-framework</strong>.
+        </p>
+        <nitro-button>Nitro Button</nitro-button>
     </div>
 </template>
 
 <script>
+
+import { Button as NitroButton } from '@nitro-ui/vue-framework';
 export default {
-    name: 'HomePage'
+    name: 'HomePage',
+    components: {
+        NitroButton
+    }
 }
 </script>

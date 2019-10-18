@@ -1,13 +1,23 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Vuex from 'vuex';
 
 // containers
 import App from './containers/App';
 import Home from './containers/Home';
-import Button from './containers/Button';
+import AboutUsPage from './containers/AboutUsPage';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 Vue.use( VueRouter );
+Vue.use( Vuex );
+
+const store = new Vuex.Store( {
+    debug: true,
+    state: {
+        message: 'Hello Vuex!',
+        count: 0
+    }
+} );
 
 const router = new VueRouter( {
     mode: 'history',
@@ -19,9 +29,9 @@ const router = new VueRouter( {
             component: Home
         },
         {
-            name: 'button',
-            path: '/button',
-            component: Button
+            name: 'about-us',
+            path: '/about-us',
+            component: AboutUsPage
         },
     ]
 } );
@@ -30,5 +40,6 @@ const BaseVue = Vue.extend( { router } );
 
 new BaseVue( {
     el: '#app',
+    store,
     render: h => h( App )
 } );
